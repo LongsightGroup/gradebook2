@@ -42,19 +42,6 @@
 				<enabled>false</enabled>
 			</snapshots>
 		</repository>
-		<repository>
-			<id>ucd-maven</id>
-			<url>http://maven2.ucdavis.edu/maven2</url>
-		</repository>
-		<repository>
-			<id>ibiblio</id>
-			<url>http://mirrors.ibiblio.org/pub/mirrors/maven2</url>
-		</repository>
-		<repository>
-		    <id>sencha-commercial-release</id>
-		    <name>Sencha commercial releases</name>
-		    <url>https://maven.sencha.com/repo/commercial-release/</url>
-		</repository>
 	</repositories>
 
 	<properties>
