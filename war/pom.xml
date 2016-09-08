@@ -23,6 +23,12 @@
 			<groupId>org.sakaiproject.gradebook2</groupId>
 			<artifactId>gradebook2-shared</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.sakaiproject.edu-services.course-management</groupId>
+			<artifactId>coursemanagement-api</artifactId>
+			<version>${sakai.version}</version>
+			<scope>provided</scope>
+		</dependency>
 			
 		<!-- Need this to prevent these spring artifacts from being placed in WEB-INF -->
 		<dependency>
@@ -40,6 +46,10 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.opencsv</groupId>
+			<artifactId>opencsv</artifactId>
 		</dependency>
 	</dependencies>
 	<build>

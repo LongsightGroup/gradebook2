@@ -16,21 +16,30 @@
 
 	<repositories>
 		<repository>
-			<id>sakai-maven</id>
-			<name>Sakai Maven Repo</name>
+			<id>alfresco</id>
+			<name>Alfresco Maven Repo</name>
 			<layout>default</layout>
-			<url>http://source.sakaiproject.org/maven2</url>
+			<url>https://artifacts.alfresco.com/nexus/content/groups/public/</url>
 			<snapshots>
 				<enabled>false</enabled>
 			</snapshots>
 		</repository>
 		<repository>
-			<id>sakai-maven2-snapshots</id>
-			<name>Sakai Maven Repo</name>
+			<id>boundless</id>
+			<name>Boundless Maven Repo</name>
 			<layout>default</layout>
-			<url>http://source.sakaiproject.org/maven2-snapshots</url>
+			<url>https://repo.boundlessgeo.com/main/</url>
 			<snapshots>
-				<enabled>true</enabled>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>sakai-nexus</id>
+			<name>Sakai Nexus Maven Repo</name>
+			<layout>default</layout>
+			<url>http://nexus.sakaiproject.org:8081/nexus/content/groups/public/</url>
+			<snapshots>
+				<enabled>false</enabled>
 			</snapshots>
 		</repository>
 		<repository>

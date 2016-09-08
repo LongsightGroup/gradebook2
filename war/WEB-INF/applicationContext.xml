@@ -106,8 +106,17 @@
 		<property name="siteService" ref="org.sakaiproject.site.api.SiteService"/>
 		<property name="finalGradeSubmissionPath" value="/tmp"/>
 	</bean>
-	
-	
+
+	<bean id="org.sakaiproject.gradebook.gwt.sakai.UcscInstitutionalAdvisor" class="org.sakaiproject.gradebook.gwt.sakai.UcscInstitutionalAdvisor" singleton="false">
+		<property name="toolManager" ref="org.sakaiproject.tool.api.ToolManager"/>
+		<property name="siteService" ref="org.sakaiproject.site.api.SiteService"/>
+		<property name="userDirectoryService" ref="org.sakaiproject.user.api.UserDirectoryService"/>
+		<property name="contentHostingService" ref="org.sakaiproject.content.api.ContentHostingService"/>
+		<property name="courseManagementService"><ref bean="org.sakaiproject.coursemanagement.api.CourseManagementService"/></property>
+		<property name="sessionManager" ref="org.sakaiproject.tool.api.SessionManager"/>
+		<property name="finalGradeSubmissionPath" value="Grades"/>
+	</bean>
+
 	<bean id="org.sakaiproject.gradebook.gwt.sakai.GradeCalculations"
 		class="org.sakaiproject.gradebook.gwt.sakai.calculations.GradeCalculationsImpl"
 		init-method="init">
